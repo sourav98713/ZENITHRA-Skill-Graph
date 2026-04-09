@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <style>
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        form {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 250px;
+            height: 35px;
+            font-size: 16px;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        button {
+            width: 150px;
+            height: 35px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 margin-top: 20px>Skill Analyzer</h1>
+    <img src="https://imgs.search.brave.com/qXB6c3xBepCw8QRLXNpBSgrhPVtyq6OOCHEtyw5y5pQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uc3V0/LmFjLmluL3NpdGVz/L2RlZmF1bHQvZmls/ZXMvc3R5bGVzL2hv/bWVfbmV3c190aHVt/Yi9wdWJsaWMvMjAy/Mi0xMC9sb2dvXzAu/cG5nP2l0b2s9QUFf/c3hXSzk"
+        alt="Logo" class="logo" width="100">
+
+    <form action="/submit" method="post">
+
+
+        <label for="roll">Roll Number</label><br>
+        <input type="text" id="roll" name="roll" placeholder="Enter your University Roll No." required><br><br>
+
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your Name" required><br><br>
+
+
+        <label for="skill">Skill</label><br>
+        <input type="text" id="skill" name="skill" placeholder="Enter the skill you have or learning" required><br><br>
+
+        <label for="college">College Name</label><br>
+        <input type="text" id="college" name="college" placeholder="Enter the College name" required><br><br>
+
+
+        <label for="github">GitHub Username</label><br>
+        <input type="text" id="github" name="github" placeholder="Enter GitHub username"><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    
+
+    <br><br>
+
+    <a href="{{ url_for('team') }}">
+        <button type="button">Team Members</button>
+    </a>
+    <a href="{{ url_for('pie') }}">
+        <button type="button">pie chart</button>
+    </a>
+
+</body>
+
+</html>

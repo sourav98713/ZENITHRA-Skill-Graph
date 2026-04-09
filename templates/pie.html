@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Skill Graph</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width:100px;
+        }
+
+        img {
+            margin-top: 20px;
+            width: 600px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 150px;
+            height: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+<h1>Skill Distribution Graph</h1>
+
+
+<img src="https://imgs.search.brave.com/qXB6c3xBepCw8QRLXNpBSgrhPVtyq6OOCHEtyw5y5pQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uc3V0/LmFjLmluL3NpdGVz/L2RlZmF1bHQvZmls/ZXMvc3R5bGVzL2hv/bWVfbmV3c190aHVt/Yi9wdWJsaWMvMjAy/Mi0xMC9sb2dvXzAu/cG5nP2l0b2s9QUFf/c3hXSzk" 
+    alt="Logo" class="logo" width="100">
+
+<img src="{{ url_for('static', filename='pie_chart.png') }}?{{ range(1,1000)|random }}">
+
+<br>
+
+<a href="{{ url_for('index') }}">
+    <button type="button">Back to Home</button>
+</a>
+
+</body>
+</html>

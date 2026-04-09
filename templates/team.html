@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>Project Creators</title>
+    <style>
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        body {
+            font-family: Arial;
+            
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .roll {
+            color: gray;
+        }
+         button {
+            width: 150px;
+            height: 35px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://imgs.search.brave.com/qXB6c3xBepCw8QRLXNpBSgrhPVtyq6OOCHEtyw5y5pQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uc3V0/LmFjLmluL3NpdGVz/L2RlZmF1bHQvZmls/ZXMvc3R5bGVzL2hv/bWVfbmV3c190aHVt/Yi9wdWJsaWMvMjAy/Mi0xMC9sb2dvXzAu/cG5nP2l0b2s9QUFf/c3hXSzk" 
+    alt="Logo" class="logo" width="100">
+
+    <h1>Team Members</h1>
+
+    <div class="container">
+
+        
+        <div class="card">
+            <img src="{{ url_for('static', filename='Aryan.jpg') }}" alt="Aryan">
+            <div class="name">Aryan Sahu</div>
+            <div class="roll">2025UME7616</div>
+        </div>
+
+        
+        <div class="card">
+            <img src="{{ url_for('static', filename='Aman.jpg') }}" alt="Aman">
+            <div class="name">Aman kumar</div>
+            <div class="roll">2025UME7625</div>
+        </div>
+
+        
+        <div class="card">
+            <img src="{{ url_for('static', filename='shawn.jpg') }}" alt="Shawn">
+            <div class="name">Shawn Pal</div>
+            <div class="roll">2025UME7614</div>
+        </div>
+        
+        
+        <div class="card">
+           <img src="{{ url_for('static', filename='Vikash.jpg') }}" alt="Vikash">
+            <div class="name">Vikash Kumar</div>
+            <div class="roll">2025UME7640</div>
+        </div>
+
+    </div>
+<br><br>
+
+<a href="{{ url_for('index') }}">
+    <button type="button">Back to home</button>
+</a>
+
+</body>
+</html>
